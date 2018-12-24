@@ -1,4 +1,6 @@
 from random import randint
+
+
 ROUNDS = input('How many rounds you want to Play ??  : ')
 ROUNDS=int(ROUNDS)
 TOTALWIN = 0
@@ -10,7 +12,7 @@ for x in range(ROUNDS):
 
 
 
-print(player, 'vs', end=' ') 
+print(player, 'vs', ' computer ') 
 
 chosen = randint(1,3)
 #print(chosen)
