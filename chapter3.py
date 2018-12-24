@@ -1,5 +1,7 @@
 from random import randint
 
+print('Let\'s play Stone, Paper and Scissors !!!!')
+ 
 ROUNDS = input('How many rounds you want to Play ??  : ')
 ROUNDS=int(ROUNDS)
 TOTALWIN = 0
@@ -9,8 +11,7 @@ for x in range(ROUNDS):
   print('ROUND ',x)
   player = input(' rock(r),paper(p)scissors(s) : ')
 
-  print(player, 'vs', end=' ') 
-
+  
   chosen = randint(1,3)
   #print(chosen)
 
@@ -22,7 +23,7 @@ for x in range(ROUNDS):
   elif chosen == 3:
     computer = 's'
     
-  print(computer)
+  print(player, 'vs', computer ) 
 
   if player == computer:
       print('DRAW!!!!!')
@@ -56,6 +57,7 @@ for x in range(ROUNDS):
           print('Computer wins!!!!')
 
 print('\n ========== RESULT  ==============')
+print('No. of Draw(s) = ',DRAW)
 COMPCOUNT = ROUNDS-TOTALWIN-DRAW
 print('Score : You vs Computer  \n      = ',TOTALWIN,' vs ',COMPCOUNT)
 
